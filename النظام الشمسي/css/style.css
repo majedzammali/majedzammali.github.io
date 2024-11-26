@@ -1,4 +1,4 @@
-/* Général - Body */
+
 body {
     font-family: Arial, sans-serif;
     font-size: 1rem;
@@ -6,8 +6,8 @@ body {
     color: #161616;
     background-color: #f3f3f3;
     display: grid;
-    grid-template-columns: 15rem 1fr; /* Sidebar and main */
-    grid-template-rows: auto 1fr auto; /* Header, content, footer */
+    grid-template-columns: 15rem 1fr; 
+    grid-template-rows: auto 1fr auto; 
     grid-template-areas:
         "header header"
         "sidebar main"
@@ -17,7 +17,7 @@ body {
     padding: 0;
 }
 
-/* Header */
+
 .dashboard-header {
     grid-area: header;
     background-color: #fff;
@@ -26,7 +26,7 @@ body {
     border-bottom: 1px solid #ccc;
 }
 
-/* Sidebar */
+
 .dashboard-sidebar {
     grid-area: sidebar;
     background-color: #1d1d29;
@@ -54,7 +54,7 @@ body {
     text-decoration: underline;
 }
 
-/* Main content */
+
 .dashboard-main {
     grid-area: main;
     padding: 1.25rem;
@@ -82,7 +82,7 @@ body {
     border-radius: 0.5rem;
 }
 
-/* Footer */
+
 .dashboard-footer {
     grid-area: footer;
     background-color: #fff;
@@ -100,17 +100,17 @@ body {
     text-decoration: underline;
 }
 
-/* Responsive Design */
+
 @media (min-width: 768px) {
     .dashboard-main {
         display: grid;
-        grid-template-columns: repeat(2, 1fr); /* Two columns for content */
+        grid-template-columns: repeat(2, 1fr); 
         gap: 1rem;
     }
 }
 
 @media (min-width: 992px) {
     .dashboard-main {
-        grid-template-columns: repeat(3, 1fr); /* Three columns for content */
+        grid-template-columns: repeat(3, 1fr); 
     }
 }
